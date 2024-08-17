@@ -2,3 +2,4 @@ node_modules
 dist
 access.log
 dev.log
+.env
