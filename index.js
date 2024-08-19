@@ -1,8 +1,8 @@
 import express from 'express';
 import dotenv from 'dotenv';
+dotenv.config();
 import fs from 'fs';
 import path from 'path';
-dotenv.config();
 const PORT = process.env.PORT || 5000;
 import { fileURLToPath } from 'url';
 import authRoute from './routes/auth.js'
