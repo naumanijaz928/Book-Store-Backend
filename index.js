@@ -8,6 +8,7 @@ import { fileURLToPath } from 'url';
 import authRoute from './routes/auth.js'
 import loginRoute from './routes/login.js'
 import bookRoute from './routes/books.js'
+import userRoute from './routes/users.js'
 import morgan from 'morgan';
 import mongoose from 'mongoose';
 import cors from 'cors';
@@ -35,6 +36,7 @@ app.get('/', (req, res) => {
 app.use('/api', authRoute);
 app.use('/api', loginRoute);
 app.use('/api/book', bookRoute);
+app.use('/api/user', userRoute);
 app.listen(PORT, () => console.log(`Server is runing on Port ${PORT}`))
 
 const ConnectDB = async () => {
